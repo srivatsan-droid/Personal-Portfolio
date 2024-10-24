@@ -1,0 +1,449 @@
+/* Body background color matching the image */
+body {
+    background-color: #27273e; /* Dark navy blue, matching the background from the image */
+    color: rgb(172, 17, 17); /* Text color */
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+.section { 
+    display: flex;
+    justify-content: right;
+    text-align: space-between;
+    color: #ebf3ec;
+    padding: 20px auto;
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 10px 0px 40px;
+    justify-content: space-between;
+    border-radius: 0.75em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+}
+
+.Box{ 
+    padding: 70px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+}
+
+.hero {
+    float: right;
+    border-radius: 0.75em;
+}
+
+.connect-title {
+    color: #e65b11;
+    transition: color 0.3s ease;
+    font-size: 0.50em;
+    background-color: rgb(228, 214, 14);
+    box-shadow: #27273e;
+    border-radius: 0.75em;
+    -webkit-border-radius: 0.75em;
+    -moz-border-radius: 0.75em;
+    -ms-border-radius: 0.75em;
+    -o-border-radius: 0.75em;
+}
+
+.connect-title:hover {
+    color: #2a0fb5; /* Change color on hover */
+}
+/* About section */
+.about-card {
+    background-color: #1a1a2e;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    /*Moremodernandattractivefont*/padding: 10px;
+    margin: 20px auto;
+    max-width: 1000px;
+    border-radius: 15px;
+    box-shadow: 0 20px 30px rgba(197, 172, 172, 0.2);
+    transform: translateX(-100%);
+    animation: flyIn 1.5s ease-out forwards;
+    text-align: center;
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+}
+
+.about-card h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #ff4c60; /* Eye-catching color */
+}
+
+.about-card p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #ddd;
+}
+
+/* Fly-in Animation */
+@keyframes flyIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Animation triggered when the user scrolls to the section */
+.about-card {
+    opacity: 0;
+    animation: flyIn 1.5s ease-out forwards;
+}
+
+.about-card p {
+    font-size: 1.2em;
+    font-weight: 300;
+    line-height: 1.7;
+}
+
+/* Adding a transition effect for the card */
+.about-card:hover {
+    transform: scale(1.05); /* Slightly enlarges when hovered */
+    transition: transform 0.5s ease;
+}
+
+/* Fancy animated underline for the 'About Me' title */
+.about-card h1::after {
+    content: '';
+    display: block;
+    width: 150px;
+    height: 5px;
+    background-color: #eb223a;
+    margin: 10px auto;
+    animation: underline 0.6s ease-out forwards;
+}   
+
+@keyframes underline {
+    from {
+        width: 0;
+    }
+    to {
+        width: 50px;
+    }
+}
+
+.skill-icons {
+    margin-top: 20px;
+    border-radius: 0.753m;
+    -webkit-border-radius: 0.753m;
+    -moz-border-radius: 0.753m;
+    -ms-border-radius: 0.753m;
+    -o-border-radius: 0.753m;
+}
+
+.skill-icons img {
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+
+.skill-icons img:hover {
+    transform: scale(1.2); /* Scale up icons on hover */
+}
+
+/* Code Fun Fact */
+.code-fact {
+    background-color: #2e2e48;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+    color: #e65b11;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.skills-section {
+    padding: 50px;
+    text-align: center;
+    animation: fadeInUp 1s ease-in-out;
+    background-color: #1a1a2e;
+}
+
+.skills-section h1 {
+    color: #f31616;
+    font-size: 36px;
+    letter-spacing: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.skill-card {
+    background: linear-gradient(145deg, #3f3f69, #2a2a4d);
+    border-radius: 20px;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4), 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s ease;
+    position: relative;
+    color: #e3dbe7;
+    overflow: hidden;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.skill-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    transform: scale(0);
+    transition: transform 0.5s ease-in-out;
+}
+
+.skill-card:hover::before {
+    transform: scale(1);
+}
+
+.skill-card:hover {
+    transform: translateY(-10px) rotate(3deg);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.6), 0 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.skill-card img {
+    width: 50px;
+    margin-bottom: 15px;
+    transition: transform 0.5s ease;
+}
+
+.skill-card:hover img {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+}
+
+.skill-card p {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.progress-bar {
+    background-color: #e0e0df;
+    border-radius: 30px;
+    width: 100%;
+    height: 12px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress {
+    height: 100%;
+    background: linear-gradient(90deg, #4caf50, #81c784);
+    border-radius: 30px;
+    transition: width 1s ease-in-out;
+    position: relative;
+}
+
+.progress::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.progress:hover::before {
+    opacity: 1;
+}
+
+.percentage {
+    font-size: 16px;
+    color: #ddd;
+    margin-top: 5px;
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+/* Section Styling */
+#contact-me {
+    padding: 50px;
+    background: linear-gradient(145deg, #1f1f3a, #0d0d27);
+    color: #fb0c0c;
+    text-align: center;
+    animation: fadeInUp 1s ease-in-out;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+#contact-me h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(132, 130, 130, 0.5);
+    letter-spacing: 2px;
+}
+
+/* Form Container */
+footer form {
+    display: inline-block;
+    text-align: left;
+    padding: 20px;
+    background-color: rgba(26, 80, 227, 0.1);
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    animation: fadeInUp 1.2s ease-in-out;
+    -webkit-animation: fadeInUp 1.2s ease-in-out;
+}
+
+/* Label Styling */
+form label {
+    font-size: 18px;
+    color: #d72626;
+    display: block;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #c40909;
+    margin-bottom: 20px;
+    transition: all 0.4s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Input Focus State */
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form textarea:focus {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
+    outline: none;
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Button Styling */
+form button {
+    background: linear-gradient(145deg, #4CAF50, #2E7D32);
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+}
+
+form button:hover {
+    transform: scale(1.1);
+    background: linear-gradient(145deg, #66BB6A, #388E3C);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.6);
+}
+
+/* Hover Animations */
+form input[type="text"]:hover,
+form input[type="email"]:hover,
+form textarea:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+}
+
+form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* Footer Text Styling */
+#Contact p {
+    color: #ddd;
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+/* Animation for Form Elements */
+@keyframes fadeInUp {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.copyright {
+    color: #26d2fd; /* White text color */
+    font-family: 'Arial', sans-serif; /* Use a modern font */
+    font-size: 1.5em; /* Increase font size */
+    font-weight: bold; /* Make the text bold */
+    position: relative;
+    animation: fadeIn 1s ease-in-out; /* Animation for fading in */
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 600px) {
+    .copyright {
+        font-size: 1em; /* Adjust font size for smaller screens */
+    }
+}
+
+
