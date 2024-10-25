@@ -22,9 +22,6 @@ Here's a quick overview of the technologies used in building this portfolio:
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5"/>
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3"/>
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript"/>
-  <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React"/>
-  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js"/>
-  <img src="https://img.shields.io/badge/Spring%20Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white" alt="Spring Boot"/>
 </div>
 
 ---
@@ -58,3 +55,6 @@ Feel free to connect with me on these platforms:
 
 📄 License
 This project is licensed under the MIT License. See the LICENSE file for details.
+
+🌟 Thank you for visiting my portfolio! 🌟
+Feel free to explore, connect, and reach out if you’d like to discuss software development, collaborate on a project, or just say hello!
